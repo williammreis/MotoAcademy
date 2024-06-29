@@ -1,0 +1,12 @@
+.paragrafos {
+    color: blue;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.paragrafos-titulo {
+    color: coral;
+    font-size: 50px;
+    text-transform: uppercase;
+}

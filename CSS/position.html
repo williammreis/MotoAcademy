@@ -1,35 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h2> 
-        Position: Relative
-    </h2>
-
-    <div style="width: 150px; border: 1px solid blue;">
-        <div class="relative">
-            banana
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h2> 
+            Position: Relative
+        </h2>
+        
+        <div style="width: 150px; border: 1px solid blue;">
+            <div class="relative">
+                banana
+            </div>
+            
         </div>
-    </div>
 
+         
+        <div class="sticky">
+            Vasco da Gama, gigante da colina
+        </div>
+    
     
     <h2>Position: Fixed</h2>
-   
-   <div class="fixed">
-       Esse elemento é uma div fixed
-   </div>
+    
+    <div class="fixed">
+        Esse elemento é uma div fixed
+    </div>
     
     <h2>Position: Absolute</h2>
-
+    
+    <div class="relative-absolute">
+        <div class="absolute">Essa div é absoluta</div>
+    </div>
+    <div class="relative-absolute">
+        <div class="absolute">Essa div é absoluta</div>
+    </div>
+    <div class="relative-absolute">
+        <div class="absolute">Essa div é absoluta</div>
+    </div>
+    <div class="relative-absolute">
+        <div class="absolute">Essa div é absoluta</div>
+    </div>
+    <div class="relative-absolute">
+        <div class="absolute">Essa div é absoluta</div>
+    </div>
     <div class="relative-absolute">
         <div class="absolute">Essa div é absoluta</div>
     </div>
     
+    
     <style>
+        
+        .sticky {
+            top: 0;
+            position: sticky;
+            background-color: brown;
+            padding: 30px;
+            font-size: 30px;
+        }
+        
         .relative-absolute {
             position: relative;
             width: 400px;

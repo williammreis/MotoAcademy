@@ -1,0 +1,16 @@
+.paragrafos {
+    border: 1px solid; border-color: green;
+}
+
+#paragrafos {
+    color: red;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+#paragrafos-id {
+    text-transform: lowercase;
+    color: blue;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
