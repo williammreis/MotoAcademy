@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .caixaDinamica {
+            width: 50px;
+            height: 50px;
+            background-color: green;
+            margin: 5px;
+            display: inline-block;
+        }
+    </style>
+    
+    <button id="criarCaixa">Criar caixas</button>
+
+    <div id="container"></div>
+
+    <script>
+        document.getElementById('criarCaixa').addEventListener('click', ()=> {
+            const container = document.getElementById('container');
+            for(let i=0;i<5;i++) {
+                const box = document.createElement("div")
+                box.className = 'caixaDinamica';
+                box.style.backgroundColor = `rgb(${Math.floor(Math.random() * 256)}, 
+                ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+                container.appendChild(box);
+            
+            }
+        })
+    </script>
+</body>
+</html>
