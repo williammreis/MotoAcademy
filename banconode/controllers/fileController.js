@@ -12,10 +12,20 @@ async function uploadImage(req, res) {
     }
 }
 
-function getImage () {}
+async function getImage(req, res) {
+    const { id } = req.params;
+    try {
+        const image = await fileService.getImage(id);
+        res.setHeader('Content-Disposition', `attachment; filename${image.filename}`)
+        res.status(200).send(image.content)
+    } catch (error) {
+        res.status(404).send({message: "Imagem não encontrada"})
+    }
+}
+
+
 function updateImage () {}
 function deleteImage () {}
-
 
 
 module.exports = {
